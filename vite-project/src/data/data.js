@@ -7,7 +7,7 @@ export const headerData = {
       "…who likes to craft solid and scalable frontend products with great user experiences.",
     github: "https://github.com/yourname",
     linkedin: "https://linkedin.com/in/yourname",
-    profileImg: "/assets/profile.jpg",
+    profileImg: "src/assets/almila.png",
   },
   tr: {
     name: "almila",
@@ -16,22 +16,22 @@ export const headerData = {
       "…ölçeklenebilir ve güçlü frontend ürünleri geliştirmeyi, kullanıcı deneyimini en üst düzeye çıkarmayı severim.",
     github: "https://github.com/yourname",
     linkedin: "https://linkedin.com/in/yourname",
-    profileImg: "/assets/profile.jpg",
+    profileImg: "src/assets/almila.png",
   },
 };
 
 export const skillsData = {
   skills:
     [
-    { name: "Javascript", icon: "src/assets/javascript.png" },
-    { name: "Node", icon: "src/assets/node.png" },
-    { name: "React", icon: "src/assets/react.svg" },
-    { name: "VS Code", icon: "src/assets/vscode.png" },
-    { name: "Redux", icon: "src/assets/redux.png" },
-    { name: "Figma", icon: "src/assets/figma.png" }
+      { name: "Javascript", icon: "src/assets/javascript.png" },
+      { name: "Node", icon: "src/assets/node.png" },
+      { name: "React", icon: "src/assets/react.svg" },
+      { name: "VS Code", icon: "src/assets/vscode.png" },
+      { name: "Redux", icon: "src/assets/redux.png" },
+      { name: "Figma", icon: "src/assets/figma.png" }
     ],
-  en : { skillScript: "Skills" },
-  tr : { skillScript: "Yetenekler" }
+  en: { skillScript: "Skills" },
+  tr: { skillScript: "Yetenekler" }
 };
 
 
@@ -64,20 +64,34 @@ export const profileData = {
   about2: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
 };
 
-export const projectsData = [
-  {
+export const projectsData = {
+  en: [
+    {
+      title: "Workintech",
+      description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+      img: "src/assets/projects1.png",
+      links: { site: "#", github: "#" }
+    },
+    {
+      title: "Journey",
+      description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+      img: "src/assets/projects2.png",
+      links: { site: "#", github: "#" }
+    },
+  ],
+  tr: [{
     title: "Workintech",
-    description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceklerini seçmelerine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisidir. Bu eklenti, standart JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur. Git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
     img: "src/assets/projects1.png",
     links: { site: "#", github: "#" }
   },
   {
-    title: "Journey",
-    description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    title: "Yolculuk",
+    description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceklerini seçmelerine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisidir. Bu eklenti, standart JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur. Git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
     img: "src/assets/projects2.png",
     links: { site: "#", github: "#" }
-  },
-];
+  }]
+};
 
 export const contactData = {
   email: "almilascodes@gmail.com",

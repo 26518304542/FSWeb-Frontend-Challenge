@@ -1,12 +1,26 @@
 // src/components/Contact.jsx
 import { contactData } from "../data/data";
+import { useContext } from "react";
+import { LanguageContext } from "../context/LanguageContext";
+import { ThemeContext } from "../context/ThemeContext";
 
 export default function Contact() {
+
+
+  const useTheme = () => useContext(ThemeContext);
+  const useLanguage = () => useContext(LanguageContext);
+
+  const { darkMode } = useTheme();
+  const { lang, toggleLang } = useLanguage();
+
+  const content = contactData[lang];
+
+
   return (
-    <section className="bg-white p-10 md:p-20 text-center">
-      <h2 className="text-3xl font-bold mb-6 text-purple-700">Send me a message!</h2>
-      <p className="mb-6">
-        Got a question or proposal, or just want to say hello? Go ahead.
+    <section className={darkMode ? "bg-black p-10 md:p-20 text-center text-white" : "bg-white p-10 md:p-20 text-center"}>
+      <h2 className="text-5xl font-bold mb-6 text-purple-700">Send me a message!</h2>
+      <p className="mb-6 text-[#120B39] text-2xl">
+        Got a question or proposal, or just want <br /> to say hello? Go ahead.
       </p>
       <a
         href={`mailto:${contactData.email}`}
