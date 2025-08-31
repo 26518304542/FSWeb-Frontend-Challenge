@@ -20,36 +20,61 @@ export const headerData = {
   },
 };
 
-export const skillsData = [
-  { name: "Javascript", icon: "/assets/js.png" },
-  { name: "Node", icon: "/assets/node.png" },
-  { name: "React", icon: "/assets/react.png" },
-  { name: "VS Code", icon: "/assets/vscode.png" },
-  { name: "Redux", icon: "/assets/redux.png" },
-  { name: "Figma", icon: "/assets/figma.png" },
-];
+export const skillsData = {
+  skills:
+    [
+    { name: "Javascript", icon: "src/assets/javascript.png" },
+    { name: "Node", icon: "src/assets/node.png" },
+    { name: "React", icon: "src/assets/react.svg" },
+    { name: "VS Code", icon: "src/assets/vscode.png" },
+    { name: "Redux", icon: "src/assets/redux.png" },
+    { name: "Figma", icon: "src/assets/figma.png" }
+    ],
+  en : { skillScript: "Skills" },
+  tr : { skillScript: "Yetenekler" }
+};
+
 
 export const profileData = {
-  basic: {
-    birthday: "24/12/1998",
-    city: "Ankara",
-    education: "Hacettepe Uni, BSc. Psychology",
-    email: "almilascodes@gmail.com",
+
+  en: {
+    basic: {
+      birthday: "24/12/1998",
+      birthdayStrong: "Birthday",
+      city: "Ankara",
+      cityStrong: "City",
+      education: "Hacettepe Uni, BSc. Biology, 2016",
+      educationStrong: "Education",
+      email: "almilascodes@gmail.com",
+    }
   },
-  about: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
+  tr: {
+    basic: {
+      birthday: "24/12/1998",
+      birthdayStrong: "Doğum Günü",
+      city: "Ankara",
+      cityStrong: "İkamet Şehri",
+      education: "Hacettepe Ünv.  Biyoloji Lisans, 2016",
+      educationStrong: "Eğitim",
+      email: "almilascodes@gmail.com",
+    }
+  },
+  img: "src/assets/profile.png",
+  about1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+  about2: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
 };
 
 export const projectsData = [
   {
     title: "Workintech",
-    description: "A complete responsive website design with login system...",
-    img: "/assets/project1.png",
+    description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    img: "src/assets/projects1.png",
     links: { site: "#", github: "#" }
   },
   {
     title: "Journey",
-    description: "A simple, interactive, and responsive travel planner...",
-    img: "/assets/project2.png",
+    description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    img: "src/assets/projects2.png",
     links: { site: "#", github: "#" }
   },
 ];
