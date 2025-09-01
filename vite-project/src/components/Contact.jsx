@@ -29,10 +29,10 @@ export default function Contact() {
         {contactData.email}
       </a>
       <div className="flex justify-center gap-6 text-2xl text-purple-600">
-        <a href={contactData.socials.twitter}></a>
-        <a href={contactData.socials.github}></a>
-        <a href={contactData.socials.linkedin}></a>
-        <a href={contactData.socials.instagram}></a>
+        <a href={contactData.socials.twitter}>#</a>
+        <a href={contactData.socials.github}>#</a>
+        <a href={contactData.socials.linkedin}>#</a>
+        <a href={contactData.socials.instagram}>#</a>
       </div>
     </section>
   );

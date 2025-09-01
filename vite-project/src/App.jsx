@@ -6,22 +6,26 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { ThemeProvider } from "./context/ThemeContext";
 import { LanguageProvider } from "./context/LanguageContext";
+import { ToastContainer } from "react-toastify";
 
 function App() {
 
 
   return (
-    <ThemeProvider>
-      <LanguageProvider>
+    <LanguageProvider>
+      <ThemeProvider>
+
         <div className="w-full min-h-screen font-sans bg-white text-black dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
           <Header />
           <Skills />
           <Profile />
           <Projects />
           <Contact />
+          <ToastContainer />
         </div>
-      </LanguageProvider>
-    </ThemeProvider>
+
+      </ThemeProvider>
+    </LanguageProvider>
   );
 }
 

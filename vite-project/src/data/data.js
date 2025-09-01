@@ -120,3 +120,14 @@ export const contactData = {
     contactParagraph2: "sadece meraba demek istersiniz belki.",
   }
 };
+
+export const toastData = {
+  tr: {
+    darkOn: "🌙 Dark Mode Açıldı!",
+    darkOff: "☀️ Light Mode Açıldı!",
+    langText: "🇹🇷 Dil Türkçe oldu!",},
+  en: {
+    darkOn: "🌙 Dark Mode is On!",
+    darkOff: "☀️ Light Mode is On!",
+    langText: "🇬🇧 Switched to English!"},
+}
