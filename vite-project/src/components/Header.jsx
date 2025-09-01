@@ -16,7 +16,7 @@ export default function Header() {
     <header className="w-full">
       <section className="relative flex flex-col md:flex-row min-h-[640]  mx-auto">
         {/* Sol taraf - #4731D3 */}
-        <div className="flex-1 bg-[#4731D3] text-white px-8 md:px-20 py-12 md:py-20 flex flex-col">
+        <div className={darkMode? "flex-1 bg-[#171043] text-white px-8 md:px-20 py-12 md:py-20 flex flex-col"  :"flex-1 bg-[#4731D3] text-white px-8 md:px-20 py-12 md:py-20 flex flex-col"}>
           {/* üst bar */}
           <div className="flex justify-between items-center mb-12">
             <h1 className="text-xl font-bold text-[#C4F82A] -mt-6">
@@ -63,7 +63,7 @@ export default function Header() {
         </div>
 
         {/* Sağ taraf - #C4F82A */}
-        <div className="basis-[432px] md:w-1/2 bg-[#CBF281] flex items-left justify-center py-10 md:py-0 flex-col gap-15">
+        <div className={darkMode ? "basis-[432px] md:w-1/2 bg-[#211F0B] flex items-left justify-center py-10 md:py-0 flex-col gap-15" : "basis-[432px] md:w-1/2 bg-[#CBF281] flex items-left justify-center py-10 md:py-0 flex-col gap-15"}>
           <button
             onClick={toggleTheme}
             className="flex items-center gap-2 text-sm font-medium text-[#4731D3] "

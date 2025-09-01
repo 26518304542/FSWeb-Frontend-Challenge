@@ -11,16 +11,16 @@ export default function Contact() {
   const useLanguage = () => useContext(LanguageContext);
 
   const { darkMode } = useTheme();
-  const { lang, toggleLang } = useLanguage();
+  const { lang } = useLanguage();
 
   const content = contactData[lang];
 
 
   return (
     <section className={darkMode ? "bg-black p-10 md:p-20 text-center text-white" : "bg-white p-10 md:p-20 text-center"}>
-      <h2 className="text-5xl font-bold mb-6 text-purple-700">Send me a message!</h2>
-      <p className="mb-6 text-[#120B39] text-2xl">
-        Got a question or proposal, or just want <br /> to say hello? Go ahead.
+      <h2 className="text-5xl font-bold mb-6 text-purple-700">{content.contactHeader}</h2>
+      <p className={darkMode ? "mb-6 text-white text-2xl" :"mb-6 text-[#120B39] text-2xl"}>
+        {content.contactParagraph1} <br /> {content.contactParagraph2}
       </p>
       <a
         href={`mailto:${contactData.email}`}

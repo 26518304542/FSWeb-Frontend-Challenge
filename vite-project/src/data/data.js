@@ -45,7 +45,11 @@ export const profileData = {
       cityStrong: "City",
       education: "Hacettepe Uni, BSc. Biology, 2016",
       educationStrong: "Education",
-      email: "almilascodes@gmail.com",
+      role: "Frontend, UI",
+      roleStrong: "Preferred Role:",
+      profileHeading2: "Profile",
+      basicInformationHeading2: "Basic Information",
+      aboutMeHeading3: "About Me",
     }
   },
   tr: {
@@ -56,7 +60,11 @@ export const profileData = {
       cityStrong: "İkamet Şehri",
       education: "Hacettepe Ünv.  Biyoloji Lisans, 2016",
       educationStrong: "Eğitim",
-      email: "almilascodes@gmail.com",
+      role: "Ön Yüz, UI",
+      roleStrong: "Tercih Ettiği Rol",
+      profileHeading2: "Profil",
+      basicInformationHeading2: "Temel Bilgiler",
+      aboutMeHeading3: "Hakkımda",
     }
   },
   img: "src/assets/profile.png",
@@ -100,5 +108,15 @@ export const contactData = {
     github: "#",
     linkedin: "#",
     instagram: "#"
+  },
+  en: {
+    contactHeader: "Send me a message!",
+    contactParagraph1: "Got a question or proposal, or just want",
+    contactParagraph2: "to say hello? Go ahead.",
+  },
+  tr: {
+    contactHeader: "Bana bir mesaj gönder!",
+    contactParagraph1: "Eğer bir öneri ya da sorunuz varsa, ya da",
+    contactParagraph2: "sadece meraba demek istersiniz belki.",
   }
 };
