@@ -63,7 +63,7 @@ export default function Header() {
         </div>
 
         {/* Sağ taraf - #C4F82A */}
-        <div className={darkMode ? "basis-[432px] md:w-1/2 bg-[#211F0B] flex items-left justify-center py-10 md:py-0 flex-col gap-15" : "basis-[432px] md:w-1/2 bg-[#CBF281] flex items-left justify-center py-10 md:py-0 flex-col gap-15"}>
+        <div className={darkMode ? "w-full md:basis-[432px] md:w-1/2 bg-[#211F0B] flex items-left justify-center py-10 md:py-0 flex-col gap-15 mx-auto" : "w-full md:basis-[432px] md:w-1/2 bg-[#CBF281] flex items-left justify-center py-10 md:py-0 flex-col gap-15 mx-auto"}>
           <button
             onClick={toggleTheme}
             className="flex items-center gap-2 text-sm font-medium text-[#4731D3] "
@@ -82,7 +82,7 @@ export default function Header() {
           <img
             src={content.profileImg}
             alt="profile"
-            className="w-60 h-60 md:w-80 md:h-80 -ml-40 rounded-xl object-cover shadow-lg"
+            className="w-60 h-60 md:w-80 md:h-80 md:-ml-40 rounded-xl object-cover shadow-lg mx-auto "
           />
         </div>
       </section>
