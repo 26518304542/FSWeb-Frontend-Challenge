@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import {toastData} from "../data/data";
 
@@ -15,7 +15,13 @@ export const LanguageProvider = ({ children }) => {
     });
   };
 
-  toast(toastData[lang].langText);
+  useEffect(() => {
+
+    toast.success(toastData[lang].langText);
+
+  }, [lang]);
+
+
 
   return (
     <LanguageContext.Provider value={{ lang, toggleLang }}>

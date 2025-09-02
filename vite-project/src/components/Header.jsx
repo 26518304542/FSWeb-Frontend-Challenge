@@ -46,7 +46,7 @@ export default function Header() {
                 href={content.github}
                 target="_blank"
                 rel="noreferrer"
-                className={darkMode ? "flex items-center gap-2 bg-[#252128] text-black font-medium px-5 py-2 rounded shadow hover:bg-gray-100 border-white border" : "flex items-center gap-2 bg-white text-black font-medium px-5 py-2 rounded shadow hover:bg-gray-100"}
+                className={darkMode ? "flex items-center gap-2 bg-[#252128] text-white font-medium px-5 py-2 rounded shadow hover:bg-gray-100 border-white border" : "flex items-center gap-2 bg-white text-black font-medium px-5 py-2 rounded shadow hover:bg-gray-100"}
               >
                 <i className="fa-brands fa-github"></i> Github
               </a>
@@ -54,7 +54,7 @@ export default function Header() {
                 href={content.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className={darkMode ? "flex items-center gap-2 bg-[#252128] text-[#0A66C2] font-medium px-5 py-2 rounded shadow hover:bg-gray-100 border-white border" : "flex items-center gap-2 bg-white text-[#0A66C2] font-medium px-5 py-2 rounded shadow hover:bg-gray-100"}
+                className={darkMode ? "flex items-center gap-2 bg-[#252128] text-white font-medium px-5 py-2 rounded shadow hover:bg-gray-100 border-white border" : "flex items-center gap-2 bg-white text-[#0A66C2] font-medium px-5 py-2 rounded shadow hover:bg-gray-100"}
               >
                 <i className="fa-brands fa-linkedin"></i> LinkedIn
               </a>

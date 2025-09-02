@@ -32,7 +32,7 @@ export default function Skills() {
           {skillsData.skills.map((skill, index) => (
             <div key={index} className="flex flex-row items-center gap-2">
               <img src={skill.icon} alt={skill.name} className="w-25 h-25" />
-              <span className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#777777]">
+              <span className={`${darkMode ? "text-[#FFFFFF]" : "text-[#777777]" } text-xl sm:text-2xl md:text-3xl font-semibold `}>
                 {skill.name}
               </span>
             </div>

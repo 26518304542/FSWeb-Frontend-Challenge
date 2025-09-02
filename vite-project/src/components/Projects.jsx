@@ -2,6 +2,7 @@ import { projectsData } from "../data/data";
 import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 import { ThemeContext } from "../context/ThemeContext";
+import useApi from "../hooks/useApi";
 
 export default function Projects() {
 
@@ -9,6 +10,13 @@ export default function Projects() {
   const useLanguage = () => useContext(LanguageContext);
   const { darkMode } = useTheme();
   const { lang } = useLanguage();
+
+  /*const {data, loading, error} = useApi('/workintech', 'get', null, [lang]);
+
+  if (loading) return <p className="text-center">Loading projects...</p>;
+  if (error) return <p className="text-center text-red-500">Error: {error}</p>;
+
+  //const projects = data?.projects || [];*/
 
   const content = projectsData[lang];
 
