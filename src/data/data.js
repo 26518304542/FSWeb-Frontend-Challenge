@@ -7,7 +7,7 @@ export const headerData = {
       "…who likes to craft solid and scalable frontend products with great user experiences.",
     github: "https://github.com/yourname",
     linkedin: "https://linkedin.com/in/yourname",
-    profileImg: "src/assets/almila.png",
+    profileImg: "public/images/almila.png",
   },
   tr: {
     name: "almila",
@@ -16,19 +16,19 @@ export const headerData = {
       "…ölçeklenebilir ve güçlü frontend ürünleri geliştirmeyi, kullanıcı deneyimini en üst düzeye çıkarmayı severim.",
     github: "https://github.com/yourname",
     linkedin: "https://linkedin.com/in/yourname",
-    profileImg: "src/assets/almila.png",
+    profileImg: "public/images/almila.png",
   },
 };
 
 export const skillsData = {
   skills:
     [
-      { name: "Javascript", icon: "src/assets/javascript.png" },
-      { name: "Node", icon: "src/assets/node.png" },
-      { name: "React", icon: "src/assets/react.svg" },
-      { name: "VS Code", icon: "src/assets/vscode.png" },
-      { name: "Redux", icon: "src/assets/redux.png" },
-      { name: "Figma", icon: "src/assets/figma.png" }
+      { name: "Javascript", icon: "public/images/javascript.png" },
+      { name: "Node", icon: "public/images/node.png" },
+      { name: "React", icon: "public/images/react.svg" },
+      { name: "VS Code", icon: "public/images/vscode.png" },
+      { name: "Redux", icon: "public/images/redux.png" },
+      { name: "Figma", icon: "public/images/figma.png" }
     ],
   en: { skillScript: "Skills" },
   tr: { skillScript: "Yetenekler" }
@@ -67,7 +67,7 @@ export const profileData = {
       aboutMeHeading3: "Hakkımda",
     }
   },
-  img: "src/assets/profile.png",
+  img: "public/images/profile.png",
   about1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
   about2: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
 };
@@ -77,26 +77,26 @@ export const projectsData = {
     {
       title: "Workintech",
       description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-      img: "src/assets/projects1.png",
+      img: "public/images/projects1.png",
       links: { site: "#", github: "#" }
     },
     {
       title: "Journey",
       description: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-      img: "src/assets/projects2.png",
+      img: "public/images/projects2.png",
       links: { site: "#", github: "#" }
     },
   ],
   tr: [{
     title: "Workintech",
     description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceklerini seçmelerine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisidir. Bu eklenti, standart JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur. Git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
-    img: "src/assets/projects1.png",
+    img: "public/images/projects1.png",
     links: { site: "#", github: "#" }
   },
   {
     title: "Yolculuk",
     description: "Kullanıcılarınızın hangi çerezleri kabul edip reddedeceklerini seçmelerine olanak tanıyan, basit, özelleştirilebilir ve minimum kurulum gerektiren bir çerez eklentisidir. Bu eklenti, standart JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur. Git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
-    img: "src/assets/projects2.png",
+    img: "public/images/projects2.png",
     links: { site: "#", github: "#" }
   }]
 };
