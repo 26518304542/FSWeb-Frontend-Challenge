@@ -63,7 +63,7 @@ export default function Header() {
         </div>
 
         {/* Sağ taraf - #C4F82A */}
-        <div className={darkMode ? "w-full md:basis-[432px] md:w-1/2 bg-[#211F0B] flex items-left justify-center py-10 md:py-0 flex-col gap-30 mx-auto" : "w-full md:basis-[432px] md:w-1/2 bg-[#CBF281] flex items-left justify-center py-10 md:py-0 flex-col gap-15 mx-auto"}>
+        <div className={darkMode ? "w-full grid-cols-2 md:basis-[432px] md:w-1/2 bg-[#211F0B] flex items-left justify-center py-10 md:py-0 flex-col gap-15 mx-auto" : "w-full grid-cols-2 md:basis-[432px] md:w-1/2 bg-[#CBF281] flex items-left justify-center py-10 md:py-0 flex-col gap-15 mx-auto"}>
           <button
             onClick={toggleTheme}
             className="flex items-center gap-2 text-sm font-medium text-[#4731D3]  mr-70 mx-auto "
