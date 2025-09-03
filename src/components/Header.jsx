@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header className="w-full">
-      <section className="relative flex flex-col md:flex-row min-h-[640]  mx-auto">
+      <section className="relative grid-cols-2 flex flex-col md:flex-row min-h-[640]  mx-auto">
         {/* Sol taraf - #4731D3 */}
         <div className={darkMode? "flex-1 bg-[#171043] text-white px-8 md:px-20 py-12 md:py-20 flex flex-col"  :"flex-1 bg-[#4731D3] text-white px-8 md:px-20 py-12 md:py-20 flex flex-col"}>
           {/* üst bar */}
@@ -63,7 +63,7 @@ export default function Header() {
         </div>
 
         {/* Sağ taraf - #C4F82A */}
-        <div className={darkMode ? "w-full grid-cols-2 md:basis-[432px] md:w-1/2 bg-[#211F0B] flex items-left justify-center py-10 md:py-0 flex-col gap-15 mx-auto" : "w-full grid-cols-2 md:basis-[432px] md:w-1/2 bg-[#CBF281] flex items-left justify-center py-10 md:py-0 flex-col gap-15 mx-auto"}>
+        <div className={darkMode ? "w-full  md:basis-[432px] md:w-1/2 bg-[#211F0B] flex items-left justify-center py-10 md:py-0 flex-col gap-15 mx-auto" : "w-full md:basis-[432px] md:w-1/2 bg-[#CBF281] flex items-left justify-center py-10 md:py-0 flex-col gap-15 mx-auto"}>
           <button
             onClick={toggleTheme}
             className="flex items-center gap-2 text-sm font-medium text-[#4731D3]  mr-70 mx-auto "
